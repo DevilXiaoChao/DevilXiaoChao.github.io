@@ -56,25 +56,6 @@
   
   
   <entry>
-    <title>2022年3月2日晚日记</title>
-    <link href="/2022/03/02/2022%E5%B9%B43%E6%9C%882%E6%97%A5%E6%99%9A%E6%97%A5%E8%AE%B0/"/>
-    <url>/2022/03/02/2022%E5%B9%B43%E6%9C%882%E6%97%A5%E6%99%9A%E6%97%A5%E8%AE%B0/</url>
-    
-    <content type="html"><![CDATA[<p>不是想说点什么，就是有点不开心……</p><p>一事无成，却落得一身疾病，难受啊……</p>]]></content>
-    
-    
-    <categories>
-      
-      <category>日记</category>
-      
-    </categories>
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>Ubuntu20.04上手动搭建LNMP环境</title>
     <link href="/2020/07/28/Ubuntu20-04%E4%B8%8A%E6%89%8B%E5%8A%A8%E6%90%AD%E5%BB%BALNMP%E7%8E%AF%E5%A2%83/"/>
     <url>/2020/07/28/Ubuntu20-04%E4%B8%8A%E6%89%8B%E5%8A%A8%E6%90%AD%E5%BB%BALNMP%E7%8E%AF%E5%A2%83/</url>
@@ -172,9 +153,9 @@
     
     <tags>
       
-      <tag>ubuntu</tag>
-      
       <tag>kde</tag>
+      
+      <tag>ubuntu</tag>
       
     </tags>
     
