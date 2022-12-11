@@ -4,6 +4,81 @@
   
   
   <entry>
+    <title>Windows10软件配置清单</title>
+    <link href="/2022/12/11/Windows10%E8%BD%AF%E4%BB%B6%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/"/>
+    <url>/2022/12/11/Windows10%E8%BD%AF%E4%BB%B6%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/</url>
+    
+    <content type="html"><![CDATA[<blockquote><p>记录一些电脑安装的软件，重装系统后，可以快速按照清单来安装软件</p></blockquote><h3 id="1-常用："><a href="#1-常用：" class="headerlink" title="1. 常用："></a>1. 常用：</h3><p><a href="https://browser.360.cn/eex/index.html?channel=9">360极速浏览器X</a></p><p><a href="https://www.huorong.cn/">火绒安全软件</a></p><p><a href="https://pinyin.sogou.com/">搜狗输入法</a></p><p><a href="https://www.google.cn/chrome/">Chrome浏览器</a></p><p><a href="https://www.7-zip.org/">7-Zip</a></p><p><a href="https://dm.weishi.360.cn/home.html">360驱动大师</a></p><p><a href="https://im.qq.com/">QQ</a></p><p><a href="https://pc.weixin.qq.com/">微信</a></p><p><a href="https://www.xunlei.com/">迅雷</a></p><p><a href="https://www.wegame.com.cn/">WeGame</a></p><p><a href="http://pan.baidu.com/download">百度网盘</a></p><p><a href="https://otp.landian.vip/zh-cn/">office</a> + visio</p><p><a href="https://potplayer.daum.net/?lang=zh_CN">PotPlayer</a></p><p><a href="https://notepad-plus-plus.org/">Notepad++</a></p><p><a href="https://music.163.com/#/download">网易云音乐</a></p><p><a href="https://y.qq.com/download/download.html">QQ音乐</a></p><p><a href="https://download.kugou.com/">酷狗音乐</a></p><p><a href="https://www.sumatrapdfreader.org/download-free-pdf-viewer.html">SumatraPDF</a></p><p><a href="https://www.typora.io/">Typora</a>（开始收费，目前安装的是旧版本0.9.93）</p><p><a href="https://cn.ultraiso.net/xiazai.html">软碟通</a></p><p><a href="http://kankan.meitu.com/">美图看看</a></p><p><a href="https://v.qq.com/">腾讯视频</a></p><p><a href="https://docs.snipaste.com/zh-cn/download">Snipaste</a></p><h3 id="2-可选："><a href="#2-可选：" class="headerlink" title="2. 可选："></a>2. 可选：</h3><p><a href="http://www.u.tools/">utools</a></p><p><a href="https://weibo.com/vposy">Adobe系列</a></p><p><a href="https://www.bitcomet.com/cn/downloads">BitComet</a></p><p><a href="https://calibre-ebook.com/download_windows">calibre</a></p><p><a href="http://www.pcgeshi.com/index.html">格式工厂</a></p><p><a href="https://www.diskinternals.com/linux-reader/">DiskInternals Linux Reader</a></p><p><a href="https://www.freedownloadmanager.org/zh/download.htm">Free Download Manager</a></p><p><a href="https://www.epicgames.com/store/zh-CN/">epic</a></p><p><a href="https://support.logi.com/hc/zh-cn/articles/360025298133">Logitech G HUB</a></p><p><a href="https://store.steampowered.com/">steam</a></p><p><a href="https://github.com/indiff/qttabbar">QTTabBar</a>中文二次开发</p><p>MP3tag</p><p>MIUI+</p><p>英伟达</p><p>树莓派</p><p>spacedesk</p><p>vnc</p><p>斗鱼 抖音 虎牙 哔哩哔哩 </p><h3 id="3-视频插件和工具："><a href="#3-视频插件和工具：" class="headerlink" title="3. 视频插件和工具："></a>3. 视频插件和工具：</h3><p>BorisFX</p><p>Mocha Plus-ins</p><p>VFX Suite</p><p>小丸工具箱</p><p>QuickTime</p><h3 id="4-编程环境和工具："><a href="#4-编程环境和工具：" class="headerlink" title="4. 编程环境和工具："></a>4. 编程环境和工具：</h3><p><a href="https://www.python.org/">Python</a></p><p><a href="https://www.oracle.com/java/technologies/downloads/">Java</a></p><p><a href="https://git-scm.com/">git</a></p><p><a href="https://nodejs.org/zh-cn/">Node.js</a></p><p><a href="https://dev.mysql.com/downloads/mysql/">MySQL</a></p><p><a href="https://code.visualstudio.com/">VS code</a></p><p><a href="https://www.vmware.com/cn/products/workstation-pro.html">VMware</a></p><p><a href="https://dbeaver.io/download/">DBeaver Community</a></p><p><a href="https://www.xshell.com/zh/free-for-home-school/">Xshell 和 Xftp</a></p><p><a href="https://www.microsoft.com/zh-cn/p/windows-terminal/9n0dx20hk701?rtc=1&activetab=pivot:overviewtab">Terminal</a></p><p><a href="https://www.jetbrains.com/toolbox-app/">JetBrains Toolbox App</a></p><p>IntelliJ Idea</p><p>IntelliJ Pycharm</p><p><a href="https://www.anaconda.com/">Anaconda</a></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>笔记</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Windows</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>终端设置代理的方法</title>
+    <link href="/2022/12/11/%E7%BB%88%E7%AB%AF%E8%AE%BE%E7%BD%AE%E4%BB%A3%E7%90%86%E7%9A%84%E6%96%B9%E6%B3%95/"/>
+    <url>/2022/12/11/%E7%BB%88%E7%AB%AF%E8%AE%BE%E7%BD%AE%E4%BB%A3%E7%90%86%E7%9A%84%E6%96%B9%E6%B3%95/</url>
+    
+    <content type="html"><![CDATA[<p>开启VPN后，有时候终端没有经过代理，这里记录几个让终端走代理的方法。</p><h1 id="一-启动VPN"><a href="#一-启动VPN" class="headerlink" title="一. 启动VPN"></a>一. 启动VPN</h1><p>不记录具体方法，不同vpn启动方式有差别</p><h1 id="二-设置代理"><a href="#二-设置代理" class="headerlink" title="二. 设置代理"></a>二. 设置代理</h1><h3 id="1-设置代理可以使用的环境变量"><a href="#1-设置代理可以使用的环境变量" class="headerlink" title="1. 设置代理可以使用的环境变量"></a>1. 设置代理可以使用的环境变量</h3><p><strong>http_proxy</strong>、<strong>https_proxy</strong>、<strong>ftp_proxy</strong>、<strong>socket_proxy</strong>、<strong>all_proxy</strong>、<strong>no_proxy</strong></p><h3 id="2-添加代理"><a href="#2-添加代理" class="headerlink" title="2. 添加代理"></a>2. 添加代理</h3><p>示例使用的ip为127.0.0.1，端口为7890和7891，具体ip和端口根据实际情况设置。</p><p>命令不需要全部使用。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">export</span> http_proxy=<span class="hljs-string">&quot;http://127.0.0.1:7890/&quot;</span><br><br><span class="hljs-built_in">export</span> https_proxy=<span class="hljs-string">&quot;http://127.0.0.1:7890/&quot;</span><br><br><span class="hljs-built_in">export</span> all_proxy=<span class="hljs-string">&quot;socks5://127.0.0.1:7891/&quot;</span><br><br><span class="hljs-built_in">export</span> no_proxy=<span class="hljs-string">&quot;localhost,127.0.0.0/8,::1&quot;</span><br></code></pre></td></tr></table></figure><h3 id="3-取消代理"><a href="#3-取消代理" class="headerlink" title="3. 取消代理"></a>3. 取消代理</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 取消 HTTP_PROXY 代理</span><br><span class="hljs-built_in">unset</span> http_proxy<br><br><span class="hljs-comment"># 取消 HTTPS_PROXY 代理</span><br><span class="hljs-built_in">unset</span> https_proxy<br><br><span class="hljs-comment"># 取消 FTP_PROXY 代理</span><br><span class="hljs-built_in">unset</span> ftp_proxy<br><br><span class="hljs-comment"># 取消 SOCKET_PROXY 代理</span><br><span class="hljs-built_in">unset</span> socket_proxy<br><br><span class="hljs-comment"># 取消 NO_PROXY 代理</span><br><span class="hljs-built_in">unset</span> no_proxy<br><br><span class="hljs-comment"># 取消 ALL_PROXY 代理</span><br><span class="hljs-built_in">unset</span> all_proxy<br></code></pre></td></tr></table></figure><h3 id="3-添加git代理"><a href="#3-添加git代理" class="headerlink" title="3. 添加git代理"></a>3. 添加git代理</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">git config --global http.proxy http://127.0.0.1:7890<br>git config --global https.proxy https://127.0.0.1:7890<br></code></pre></td></tr></table></figure><h3 id="4-取消git代理"><a href="#4-取消git代理" class="headerlink" title="4. 取消git代理"></a>4. 取消git代理</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">git config --global --<span class="hljs-built_in">unset</span> http.proxy<br>git config --global --<span class="hljs-built_in">unset</span> https.proxy<br></code></pre></td></tr></table></figure><h3 id="5-显示代理"><a href="#5-显示代理" class="headerlink" title="5. 显示代理"></a>5. 显示代理</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 显示 HTTP_PROXY 代理</span><br><span class="hljs-built_in">echo</span> <span class="hljs-variable">$http_proxy</span><br><br><span class="hljs-comment"># 显示 HTTPS_PROXY 代理</span><br><span class="hljs-built_in">echo</span> <span class="hljs-variable">$https_proxy</span><br><br><span class="hljs-comment"># 显示 FTP_PROXY 代理</span><br><span class="hljs-built_in">echo</span> <span class="hljs-variable">$ftp_proxy</span><br><br><span class="hljs-comment"># 显示 SOCKET_PROXY 代理</span><br><span class="hljs-built_in">echo</span> <span class="hljs-variable">$socket_proxy</span><br><br><span class="hljs-comment"># 显示 NO_PROXY 代理</span><br><span class="hljs-built_in">echo</span> <span class="hljs-variable">$no_proxy</span><br><br><span class="hljs-comment"># 显示 ALL_PROXY 代理</span><br><span class="hljs-built_in">echo</span> <span class="hljs-variable">$all_proxy</span><br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>教程</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>代理</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>PyCharm卡在启动界面</title>
+    <link href="/2022/12/11/PyCharm%E5%8D%A1%E5%9C%A8%E5%90%AF%E5%8A%A8%E7%95%8C%E9%9D%A2/"/>
+    <url>/2022/12/11/PyCharm%E5%8D%A1%E5%9C%A8%E5%90%AF%E5%8A%A8%E7%95%8C%E9%9D%A2/</url>
+    
+    <content type="html"><![CDATA[<p>PyCharm突然打不开，卡在启动界面</p><p>找到日志，日志中有几行ERROR</p><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs stylus"><span class="hljs-number">2022</span>-<span class="hljs-number">11</span>-<span class="hljs-number">09</span> <span class="hljs-number">09</span>:<span class="hljs-number">24</span>:<span class="hljs-number">00</span>,<span class="hljs-number">568</span> <span class="hljs-selector-attr">[   4847]</span>  ERROR - llij<span class="hljs-selector-class">.ide</span><span class="hljs-selector-class">.plugins</span><span class="hljs-selector-class">.PluginManager</span> - java<span class="hljs-selector-class">.net</span><span class="hljs-selector-class">.BindException</span>: Address already <span class="hljs-keyword">in</span> use: bind <br>java<span class="hljs-selector-class">.util</span><span class="hljs-selector-class">.concurrent</span><span class="hljs-selector-class">.CompletionException</span>: java<span class="hljs-selector-class">.net</span><span class="hljs-selector-class">.BindException</span>: Address already <span class="hljs-keyword">in</span> use: bind<br>省略一长串日志<br></code></pre></td></tr></table></figure><p>通过日志，可以确定和网络服务有关，在网上找到解决方法</p><p>先关闭pycharm进程</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 管理员权限下运行</span><br>net stop winnat<br>net start winnat<br></code></pre></td></tr></table></figure><p>这时可能就OK了</p><p>如果还不行，就重置一遍网络配置：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 管理员权限下运行</span><br>netsh winsock reset<br></code></pre></td></tr></table></figure><p>然后重启</p><p>我是先执行了<strong>netsh winsock reset</strong>，重启后还不行，再次执行<strong>net stop winnat</strong> 和 <strong>net start winnat</strong>，然后就可以打开了。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>笔记</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>PyCharm</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Linux通过Pyenv安装多版本Python</title>
     <link href="/2022/11/30/Linux%E9%80%9A%E8%BF%87Pyenv%E5%AE%89%E8%A3%85%E5%A4%9A%E7%89%88%E6%9C%ACPython/"/>
     <url>/2022/11/30/Linux%E9%80%9A%E8%BF%87Pyenv%E5%AE%89%E8%A3%85%E5%A4%9A%E7%89%88%E6%9C%ACPython/</url>
@@ -48,6 +123,31 @@
     <tags>
       
       <tag>Hexo</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>【少年无恙】王权霸业不是他《剑来》陈平安</title>
+    <link href="/2020/12/15/%E3%80%90%E5%B0%91%E5%B9%B4%E6%97%A0%E6%81%99%E3%80%91%E7%8E%8B%E6%9D%83%E9%9C%B8%E4%B8%9A%E4%B8%8D%E6%98%AF%E4%BB%96%E3%80%8A%E5%89%91%E6%9D%A5%E3%80%8B%E9%99%88%E5%B9%B3%E5%AE%89/"/>
+    <url>/2020/12/15/%E3%80%90%E5%B0%91%E5%B9%B4%E6%97%A0%E6%81%99%E3%80%91%E7%8E%8B%E6%9D%83%E9%9C%B8%E4%B8%9A%E4%B8%8D%E6%98%AF%E4%BB%96%E3%80%8A%E5%89%91%E6%9D%A5%E3%80%8B%E9%99%88%E5%B9%B3%E5%AE%89/</url>
+    
+    <content type="html"><![CDATA[<p>听了周笔畅的《少年无恙》</p><p>有点触动</p><p>然后剪辑了这个视频</p><p>但是因为时间的问题</p><p>没有太过于细致的打磨</p><p>比如让片段更加贴合歌词</p><p>不过</p><p>还是有不少的浏览量和点赞量</p><p>已经超过我的预期了</p><p>毕竟原本以为的是石沉大海的那种稿件</p><iframe style="width: 100%; height: 500px; max-width: 100%；align:center; padding: 20px 0;" src="//player.bilibili.com/player.html?aid=373114184&bvid=BV18Z4y1g7ie&cid=263358671&page=1" frameborder="no" scrolling="no" allowfullscreen="allowfullscreen"> </iframe><p>《剑来》广播剧上线后，</p><p>听了周笔畅演唱的主题曲《少年无恙》，</p><p>心中想起的是陈平安一直在远游，</p><p>道路艰险，</p><p>待风雪夜归，</p><p>与落魄山众人重逢时，</p><p>能微笑着说一句别来无恙。</p><p>若王权霸业如《剑来》陈平安一样，</p><p>从圈外远游而回，</p><p>最终《少年无恙》，</p><p>那又是多美好的假想~</p><p>BGM：少年无恙（《剑来》广播剧主题曲） - 周笔畅</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>日记</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>剪辑</tag>
       
     </tags>
     
