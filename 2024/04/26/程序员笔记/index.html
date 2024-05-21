@@ -1,0 +1,726 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/avatar.jpg">
+  <link rel="icon" href="/assets/avatar.jpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="小不点">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="想起来啥，就写啥，略显凌乱~">
+<meta property="og:type" content="article">
+<meta property="og:title" content="程序员笔记">
+<meta property="og:url" content="https://devilxiaochao.github.io/2024/04/26/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%AC%94%E8%AE%B0/index.html">
+<meta property="og:site_name" content="落魄山小不点">
+<meta property="og:description" content="想起来啥，就写啥，略显凌乱~">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://devilxiaochao.github.io/assets/images/blog_vchelloworld.jpg">
+<meta property="article:published_time" content="2024-04-26T00:53:30.000Z">
+<meta property="article:modified_time" content="2024-05-20T10:25:19.893Z">
+<meta property="article:author" content="小不点">
+<meta property="article:tag" content="笔记">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://devilxiaochao.github.io/assets/images/blog_vchelloworld.jpg">
+  
+  
+  
+  <title>程序员笔记 - 落魄山小不点</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"devilxiaochao.github.io","root":"/","version":"1.9.2","typing":{"enable":true,"typeSpeed":50,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 7.2.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 50vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>落魄山小不点</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" target="_self" href="javascript:;" role="button"
+                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/categories/">
+                    
+                    分类总览
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/categories/%E6%95%99%E7%A8%8B/">
+                    
+                    教程
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/categories/%E7%AC%94%E8%AE%B0/">
+                    
+                    笔记
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/categories/%E6%97%A5%E8%AE%B0/">
+                    
+                    日记
+                  </a>
+                
+              </div>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                友链
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/assets/banner/banner_11.jpg') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="程序员笔记"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2024-04-26 08:53" pubdate>
+          2024年4月26日 早上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          9.9k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          83 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">程序员笔记</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <div class="note note-success">
+            <p>想起来啥，就写啥，略显凌乱~</p>
+          </div>
+
+<span id="more"></span>
+
+<h2 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h2><h3 id="–-常用命令"><a href="#–-常用命令" class="headerlink" title="– 常用命令"></a>– 常用命令</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 自动补全命令</span><br>yum install -y bash-completion<br><br><span class="hljs-comment"># 查看系统内存</span><br>free -h<br><br><span class="hljs-comment"># 查看系统版本信息</span><br><span class="hljs-built_in">cat</span> /etc/redhat-release<br><span class="hljs-built_in">cat</span> /proc/version<br><span class="hljs-built_in">uname</span> -a<br><br><span class="hljs-comment"># 查看服务器是物理机还是虚拟机</span><br>dmidecode -s system-manufacturer<br><br><span class="hljs-comment"># 安装htop</span><br>yum install epel-release -y<br>yum -y install htop<br><br><span class="hljs-comment"># 安装常用命令</span><br>yum -y install telnet net-tools sysstat<br><br><span class="hljs-comment"># Linux进程查看器</span><br>htop<br><br><span class="hljs-comment"># 显示cpu的相关信息</span><br>lscpu<br><br><span class="hljs-comment"># 查看CPU信息</span><br><span class="hljs-built_in">cat</span> /proc/cpuinfo<br><br><span class="hljs-comment"># 查看机器一共几个cpu</span><br><span class="hljs-built_in">cat</span> /proc/cpuinfo| grep <span class="hljs-string">&quot;physical id&quot;</span>| <span class="hljs-built_in">sort</span>| <span class="hljs-built_in">uniq</span>| <span class="hljs-built_in">wc</span> -l<br><br><span class="hljs-comment"># 查看单个cpu的物理核数</span><br><span class="hljs-built_in">cat</span> /proc/cpuinfo| grep <span class="hljs-string">&quot;cpu cores&quot;</span>| <span class="hljs-built_in">uniq</span><br><br><span class="hljs-comment"># 查看总逻辑核数</span><br><span class="hljs-built_in">cat</span> /proc/cpuinfo| grep <span class="hljs-string">&quot;processor&quot;</span>| <span class="hljs-built_in">wc</span> -l<br><br><span class="hljs-comment"># 查看SELinux工作模式</span><br>getenforce<br>sestatus<br><br><span class="hljs-comment"># 永久关闭selinux</span><br>vi /etc/selinux/config <br><span class="hljs-comment"># 关闭：SELINUX=disabled</span><br><span class="hljs-comment"># 宽容模式：SELINUX=permissive</span><br><span class="hljs-comment"># 强制模式：SELINUX=enforcing</span><br><br><span class="hljs-comment"># SELinux工作模式临时切换（重启失效）</span><br><span class="hljs-comment">#切换成宽容模式</span><br>setenforce 0<br><span class="hljs-comment">#切换成强制模式</span><br>setenforce 1<br><br><span class="hljs-comment"># 指定目录或文件以外的文件全部移动到新的目录</span><br>rsync -av --remove-source-files --exclude=<span class="hljs-string">&#x27;_install&#x27;</span> --exclude=<span class="hljs-string">&#x27;1.sh&#x27;</span> --exclude=<span class="hljs-string">&#x27;oper&#x27;</span> --exclude=<span class="hljs-string">&#x27;oper_bk&#x27;</span> --exclude=<span class="hljs-string">&#x27;oper_bk_0721&#x27;</span> --exclude=<span class="hljs-string">&#x27;oper_bk0801&#x27;</span> --exclude=<span class="hljs-string">&#x27;r_bk&#x27;</span> /dockerdata/nginx/html/api/ ~/test/<br><br><br><span class="hljs-comment"># linux 下 取进程占用 cpu 最高的前10个进程</span><br>ps aux|<span class="hljs-built_in">head</span> -1;ps aux|grep -v PID|<span class="hljs-built_in">sort</span> -rn -k +3|<span class="hljs-built_in">head</span><br>ps auxw|<span class="hljs-built_in">head</span> -1;ps auxw|<span class="hljs-built_in">sort</span> -rn -k3|<span class="hljs-built_in">head</span> -10<br><br><span class="hljs-comment"># linux 下 取进程占用内存(MEM)最高的前10个进程</span><br>ps aux|<span class="hljs-built_in">head</span> -1;ps aux|grep -v PID|<span class="hljs-built_in">sort</span> -rn -k +4|<span class="hljs-built_in">head</span><br>ps auxw|<span class="hljs-built_in">head</span> -1;ps auxw|<span class="hljs-built_in">sort</span> -rn -k4|<span class="hljs-built_in">head</span> -10<br><br><span class="hljs-comment"># 虚拟内存使用最多的前10个进程</span><br>ps auxw|<span class="hljs-built_in">head</span> -1;ps auxw|<span class="hljs-built_in">sort</span> -rn -k5|<span class="hljs-built_in">head</span> -10<br><br><span class="hljs-comment"># snmp v3测试连接</span><br>snmpwalk -v3 -u snmpv3User -l authNoPriv -a MD5 -A zmsj1234 192.168.101.7<br><br><span class="hljs-comment"># snmp v2测试连接</span><br>snmpwalk -v2c -c 团体字 ip<br><br></code></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 尽可能使用内存而不用swap </span><br><span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;vm.swappiness=1&quot;</span>&gt;&gt;/etc/sysctl.conf <br>sysctl -p <br> <br><span class="hljs-comment"># 刷新SWAP </span><br><span class="hljs-comment"># 刷新一次SWAP（将SWAP里的数据转储回内存，并清空SWAP里的数据） </span><br>swapoff -a &amp;&amp; swapon -a <br> <br><span class="hljs-comment"># 清理缓存 </span><br><span class="hljs-built_in">sync</span> <br><span class="hljs-built_in">echo</span> 3&gt; /proc/sys/vm/drop_caches <br></code></pre></td></tr></table></figure>
+
+
+
+<h3 id="–-防火墙"><a href="#–-防火墙" class="headerlink" title="– 防火墙"></a>– 防火墙</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 查看防火墙状态</span><br>systemctl status firewalld<br><br><span class="hljs-comment"># 停止防火墙</span><br>systemctl stop firewalld<br><span class="hljs-comment"># 开机不启动</span><br>systemctl <span class="hljs-built_in">disable</span> firewalld<br><br><span class="hljs-comment"># 开启防火墙</span><br>systemctl start firewalld<br><span class="hljs-comment"># 开机启动</span><br>systemctl <span class="hljs-built_in">enable</span> firewalld<br><br><span class="hljs-comment"># 重启防火墙</span><br>systemctl restart firewalld<br><br><br><span class="hljs-comment"># 开放指定端口</span><br>firewall-cmd --zone=public --add-port=8080/tcp --permanent<br><br><span class="hljs-comment"># 不中断服务的重新加载防火墙</span><br>firewall-cmd --reload<br><br><span class="hljs-comment"># 查询哪些端口时开启的</span><br>firewall-cmd --list-port<br></code></pre></td></tr></table></figure>
+
+<h3 id="–-查看网络连接、端口"><a href="#–-查看网络连接、端口" class="headerlink" title="– 查看网络连接、端口"></a>– 查看网络连接、端口</h3><figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs pgsql">//端口<br>netstat -tunlp |grep xxx    查看网络连接<br>	-t (tcp) 仅显示tcp相关选项<br>	-u (udp)仅显示udp相关选项<br>	-n 拒绝显示别名，能显示数字的全部转化为数字<br>	-l 仅列出在<span class="hljs-keyword">Listen</span>(监听)的服务状态<br>	-p 显示建立相关链接的程序名<br>	<br>	-a (<span class="hljs-keyword">all</span>) 显示所有选项，默认不显示<span class="hljs-keyword">LISTEN</span>相关。<br>	-r 显示路由信息，路由表<br>	-e 显示扩展信息，例如uid等<br>	-s 按各个协议进行统计<br>	-c 每隔一个固定时间，执行该netstat命令<br>	<br>lsof -i:端口号 <br>	用于查看某一端口的占用情况，比如查看<span class="hljs-number">9092</span>端口使用情况，lsof -i:<span class="hljs-number">9095</span><br><br></code></pre></td></tr></table></figure>
+
+
+
+
+<h3 id="–-设置linux默认不启动图形界面"><a href="#–-设置linux默认不启动图形界面" class="headerlink" title="– 设置linux默认不启动图形界面"></a>– 设置linux默认不启动图形界面</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">systemctl get-default<br></code></pre></td></tr></table></figure>
+
+<p>返回结果：<br>multi-user.target 相当于init 3，命令行模式；<br>graphical.target  相当于init 5，图形界面模式。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 设置开机默认启动命令行模式：</span><br>systemctl set-default multi-user.target<br><br><span class="hljs-comment"># 设置开机默认启动图形界面：</span><br>systemctl set-default graphical.target<br></code></pre></td></tr></table></figure>
+
+
+
+<h3 id="–-Linux启动提示“-x2F-dev-x2F-mapper-x2F-ao-root：unexpected-inconsistency-RUN-fsck-MANUALLY”解决办法"><a href="#–-Linux启动提示“-x2F-dev-x2F-mapper-x2F-ao-root：unexpected-inconsistency-RUN-fsck-MANUALLY”解决办法" class="headerlink" title="– Linux启动提示“&#x2F;dev&#x2F;mapper&#x2F;ao-root：unexpected inconsistency;RUN fsck MANUALLY”解决办法"></a>– Linux启动提示“&#x2F;dev&#x2F;mapper&#x2F;ao-root：unexpected inconsistency;RUN fsck MANUALLY”解决办法</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 在修复模式下输入以下命令后重启</span><br>fsck -y /dev/mapper/ao-root  <span class="hljs-comment"># 具体分区信息</span><br></code></pre></td></tr></table></figure>
+
+
+
+<h2 id="Docker"><a href="#Docker" class="headerlink" title="Docker"></a>Docker</h2><h3 id="Docker安装"><a href="#Docker安装" class="headerlink" title="- Docker安装"></a>- Docker安装</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 安装依赖</span><br>yum -y install yum-utils device-mapper-persistent-data lvm2<br><br><span class="hljs-comment"># 设置阿里镜像仓库</span><br>yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo<br><br><span class="hljs-comment"># 更新yum索引</span><br>sudo yum makecache fast<br><br><span class="hljs-comment"># 安装docker-ce社区版</span><br>sudo yum install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin<br><span class="hljs-comment"># 下载离线包</span><br><span class="hljs-comment"># yum install --downloadonly --downloaddir=./ docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin</span><br><br><span class="hljs-comment"># 安装好以后启动docker 并设置开机自启</span><br>systemctl start docker<br>systemctl <span class="hljs-built_in">enable</span> docker<br><br><span class="hljs-comment"># 查看安装状态</span><br>docker info<br><br><span class="hljs-comment"># 查看Docker运行状态</span><br>systemctl status docker<br><br><span class="hljs-comment"># 重新启动Docker服务</span><br>systemctl restart docker<br><br><span class="hljs-comment"># 停止docker服务</span><br>systemctl stop docker<br></code></pre></td></tr></table></figure>
+
+<p>配置镜像加速器</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo <span class="hljs-built_in">mkdir</span> -p /etc/docker<br><br><span class="hljs-built_in">tee</span> /etc/docker/daemon.json &lt;&lt; <span class="hljs-string">EOF</span><br><span class="hljs-string">&#123;</span><br><span class="hljs-string">  &quot;log-driver&quot;: &quot;json-file&quot;,</span><br><span class="hljs-string">  &quot;log-opts&quot;: &#123;</span><br><span class="hljs-string">    &quot;max-size&quot;: &quot;10m&quot;,</span><br><span class="hljs-string">    &quot;max-file&quot;: &quot;3&quot; </span><br><span class="hljs-string">  &#125;</span><br><span class="hljs-string">&#125;</span><br><span class="hljs-string">EOF</span><br><br>sudo <span class="hljs-built_in">tee</span> /etc/docker/daemon.json &lt;&lt;-<span class="hljs-string">&#x27;EOF&#x27;</span><br>&#123;<br>  <span class="hljs-string">&quot;registry-mirrors&quot;</span>: [<span class="hljs-string">&quot;https://uxs8f4rt.mirror.aliyuncs.com&quot;</span>]<br>&#125;<br>EOF<br>sudo systemctl daemon-reload<br>sudo systemctl restart docker<br></code></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 迁移docker安装位置</span><br><br>systemctl stop docker<br><br><span class="hljs-comment"># 复制Docker根目录</span><br><span class="hljs-built_in">cp</span> -a /var/lib/docker /www<br><br><span class="hljs-comment"># 编辑Docker的配置文件</span><br>vi /etc/docker/daemon.json<br><span class="hljs-comment"># 添加 &quot;data-root&quot;: &quot;/www/docker&quot;</span><br>&#123;<br>	<span class="hljs-string">&quot;log-driver&quot;</span>: <span class="hljs-string">&quot;json-file&quot;</span>,<br>	<span class="hljs-string">&quot;log-opts&quot;</span>: &#123;<br>		<span class="hljs-string">&quot;max-size&quot;</span>: <span class="hljs-string">&quot;10m&quot;</span>,<br>		<span class="hljs-string">&quot;max-file&quot;</span>: <span class="hljs-string">&quot;3&quot;</span> <br>	&#125;,<br>    <span class="hljs-string">&quot;data-root&quot;</span>: <span class="hljs-string">&quot;/www/docker&quot;</span><br>&#125;<br><br>systemctl daemon-reload<br>systemctl start docker<br></code></pre></td></tr></table></figure>
+
+
+
+<h3 id="Docker-Compose安装"><a href="#Docker-Compose安装" class="headerlink" title="- Docker Compose安装"></a>- Docker Compose安装</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 下载 Docker Compose 的二进制文件。可以使用以下命令来下载最新版本的 Docker Compose：</span><br>curl -L <span class="hljs-string">&quot;https://github.com/docker/compose/releases/latest/download/docker-compose-<span class="hljs-subst">$(uname -s)</span>-<span class="hljs-subst">$(uname -m)</span>&quot;</span> -o /usr/local/bin/docker-compose<br><br><span class="hljs-comment"># 赋予 Docker Compose 可执行权限</span><br><span class="hljs-built_in">chmod</span> +x /usr/local/bin/docker-compose<br><br><span class="hljs-comment"># 验证 Docker Compose 是否安装成功：</span><br>docker-compose --version<br></code></pre></td></tr></table></figure>
+
+
+
+<h3 id="Docker使用"><a href="#Docker使用" class="headerlink" title="- Docker使用"></a>- Docker使用</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 下载镜像</span><br>docker pull centos:7.9.2009<br><br><span class="hljs-comment"># 浏览镜像文件</span><br>docker images<br><br><span class="hljs-comment"># 删除镜像文件</span><br>docker image <span class="hljs-built_in">rm</span> hello-world<br><br><span class="hljs-comment"># 创建并启动容器(Container)</span><br>docker run -it --name centos7.9 -p 8888:8888 -p 80:80 centos:7.9.2009 bash<br><br><span class="hljs-comment"># 查看docker运行中的容器</span><br>docker ps<br><br><span class="hljs-comment"># 查看docker中的所有容器</span><br>docker ps -a<br><br><span class="hljs-comment"># 停止运行的容器</span><br>docker container stop 802<br><br><span class="hljs-comment"># 重新启动容器</span><br>docker container restart 802<br><br><span class="hljs-comment"># 进入(exec)指定容器(Container)</span><br>docker <span class="hljs-built_in">exec</span> -it 802 bash<br><br><span class="hljs-comment"># 删除(rm)容器(Container)</span><br>docker container <span class="hljs-built_in">rm</span> 802<br><br><span class="hljs-comment"># 如果删除运行中的容器，需要添加 -f 参数执行强制删除,例如:</span><br>docker container <span class="hljs-built_in">rm</span> -f 802<br><br><br><span class="hljs-comment"># docker字符集</span><br>yum reinstall glibc-common -y<br><br>localedef -i zh_CN -f UTF-8 zh_CN.UTF-8<br><span class="hljs-built_in">echo</span> LANG=<span class="hljs-string">&quot;zh_CN.UTF-8&quot;</span> &gt; /etc/locale.conf<br></code></pre></td></tr></table></figure>
+
+
+
+<h2 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h2><h3 id="python安装"><a href="#python安装" class="headerlink" title="- python安装"></a>- python安装</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 安装依赖</span><br>yum install zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gcc make libffi-devel <br><br><span class="hljs-comment"># 下载python安装包</span><br>wget http://npm.taobao.org/mirrors/python/3.9.16/Python-3.9.16.tgz<br><br><span class="hljs-comment"># 解压</span><br>tar -zxvf Python-3.9.16.tgz<br><span class="hljs-built_in">cd</span> Python-3.9.16<br><br><span class="hljs-comment"># 配置安装目录并编译安装</span><br>./configure prefix=/usr/local/python3<br>make &amp;&amp; make install<br><br><span class="hljs-comment"># 创建软链接</span><br><span class="hljs-built_in">ln</span> -s /usr/local/python3/bin/python3.9 /usr/bin/python39<br><span class="hljs-built_in">ln</span> -s /usr/local/python3/bin/pip3.9 /usr/bin/pip39<br><br><span class="hljs-comment"># 更换pip源</span><br>pip39 config <span class="hljs-built_in">set</span> global.index-url https://pypi.tuna.tsinghua.edu.cn/simple<br><br><span class="hljs-comment">#更新pip</span><br>python39 -m pip install --upgrade pip<br></code></pre></td></tr></table></figure>
+
+
+
+<h2 id="Nginx"><a href="#Nginx" class="headerlink" title="Nginx"></a>Nginx</h2><h3 id="ssl证书生成配置"><a href="#ssl证书生成配置" class="headerlink" title="- ssl证书生成配置"></a>- ssl证书生成配置</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># ssl配置</span><br><span class="hljs-built_in">mkdir</span> -p /etc/nginx/ssl/<br>openssl req -x509 -nodes -days 10000 -newkey rsa:2048 -keyout /etc/nginx/ssl/nginx.key -out /etc/nginx/ssl/nginx.crt<br><span class="hljs-comment"># nginx配置文件添加下面的语句</span><br>ssl_certificate /etc/nginx/ssl/nginx.crt;<br>ssl_certificate_key /etc/nginx/ssl/nginx.key;<br></code></pre></td></tr></table></figure>
+
+<h3 id="nginx限制访问host"><a href="#nginx限制访问host" class="headerlink" title="- nginx限制访问host"></a>- nginx限制访问host</h3><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs nginx"><span class="hljs-comment"># 使用if语句判断域名是否为当前域名</span><br><span class="hljs-attribute">if</span> (<span class="hljs-variable">$host</span> != <span class="hljs-string">&quot;116.63.163.39&quot;</span>) &#123;<br>	<span class="hljs-attribute">return</span> <span class="hljs-number">403</span>; <span class="hljs-comment"># 如果不是 正确主机，则返回403 Forbidden</span><br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h3 id="nginx常用配置"><a href="#nginx常用配置" class="headerlink" title="- nginx常用配置"></a>- nginx常用配置</h3><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br></pre></td><td class="code"><pre><code class="hljs nginx"><span class="hljs-section">server</span><br>&#123;<br>    <span class="hljs-attribute">listen</span> <span class="hljs-number">80</span>;<br>    <span class="hljs-attribute">listen</span> <span class="hljs-number">443</span> ssl http2 ;<br>    <span class="hljs-attribute">server_name</span> www.yangchao.me;<br>    <span class="hljs-attribute">index</span> index.php index.html index.htm default.php default.htm default.html;<br>    <span class="hljs-attribute">root</span> /www/wwwroot/web;<br>    <br>    <span class="hljs-comment"># 常见漏扫请求头，根据实际情况选择性添加，有些请求头影响调用，需要测试</span><br>    <br>    <span class="hljs-comment"># 指定了网页的嵌入策略，要求所有嵌入的内容都采用同源策略。可选参数包括 require-corp, unsafe-none 和 none。</span><br>    <span class="hljs-attribute">add_header</span> Cross-Origin-Embedder-Policy require-corp;<br>    <span class="hljs-comment"># 设置了跨源打开策略，限制了页面可以打开哪些源的窗口。# 可选参数包括 same-origin, same-origin-allow-popups 和 unsafe-none。</span><br>    <span class="hljs-attribute">add_header</span> Cross-Origin-Opener-Policy same-origin;<br>     <span class="hljs-comment"># 确定了跨域资源共享策略，仅允许同源的资源请求。</span><br>    <span class="hljs-attribute">add_header</span> Cross-Origin-Resource-Policy same-origin;<br>    <span class="hljs-comment"># 指定了清除网站数据的内容，包括缓存和cookies。可以指定需要清除的数据类型，如 cache, cookies, storage, executionContexts, plugins 等。</span><br>    <span class="hljs-attribute">add_header</span> Clear-Site-Data <span class="hljs-string">&quot;cache, cookies&quot;</span>;<br>    <span class="hljs-comment"># 定义了内容安全策略，限制了从哪些来源加载资源。如 default-src, script-src, style-src, img-src, connect-src, font-src, object-src, media-src, frame-src, child-src 等。</span><br>    <span class="hljs-attribute">add_header</span> Content-Security-Policy <span class="hljs-string">&quot;default-src &#x27;self&#x27;&quot;</span>;<br>    <span class="hljs-comment"># 设置了引用者策略，对跨源请求仅发送源的信息。可选参数包括 no-referrer, no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin 和 unsafe-url。</span><br>    <span class="hljs-attribute">add_header</span> Referrer-Policy strict-origin-when-cross-origin; <br>    <span class="hljs-comment"># 强制使用 HTTPS 连接，保证数据传输的安全性。</span><br>    <span class="hljs-attribute">add_header</span> Strict-Transport-Security <span class="hljs-string">&quot;max-age=63072000; includeSubdomains; preload&quot;</span>;<br>    <span class="hljs-comment"># 防止浏览器对响应的 MIME 类型进行嗅探。</span><br>    <span class="hljs-attribute">add_header</span> X-Content-Type-Options <span class="hljs-string">&quot;nosniff&quot;</span>;<br>    <span class="hljs-comment"># 禁止浏览器打开下载的文件，提高安全性。</span><br>    <span class="hljs-attribute">add_header</span> X-Download-Options noopen;<br>    <span class="hljs-comment"># 明确指定跨域策略为 none，禁止 Flash 跨域访问。</span><br>    <span class="hljs-attribute">add_header</span> X-Permitted-Cross-Domain-Policies <span class="hljs-literal">none</span>;<br>    <span class="hljs-comment"># 设置了 X-Frame-Options 头部，防止页面被嵌套到其他网站的 &lt;frame&gt;, &lt;iframe&gt;, &lt;embed&gt; 或者 &lt;object&gt; 中。可选参数包括 DENY, SAMEORIGIN 和 ALLOW-FROM uri。</span><br>    <span class="hljs-attribute">add_header</span> X-Frame-Options <span class="hljs-string">&quot;SAMEORIGIN&quot;</span>;<br>    <span class="hljs-comment"># 启用浏览器的内置 XSS 过滤器，防止跨站脚本攻击。</span><br>    <span class="hljs-attribute">add_header</span> X-XSS-Protection <span class="hljs-string">&quot;1; mode=block&quot;</span>;<br>    <br>    <span class="hljs-comment"># 强制跳转https</span><br>    <span class="hljs-attribute">if</span> (<span class="hljs-variable">$server_port</span> !<span class="hljs-regexp">~ 443)</span>&#123;<br>        <span class="hljs-attribute">rewrite</span><span class="hljs-regexp"> ^(/.*)$</span> https://<span class="hljs-variable">$host</span><span class="hljs-variable">$1</span> <span class="hljs-literal">permanent</span>;<br>    &#125;<br>    <br>    <span class="hljs-comment"># ssl证书配置</span><br>    <span class="hljs-attribute">ssl_certificate</span>    /www/server/panel/vhost/cert/web/fullchain.pem;<br>    <span class="hljs-attribute">ssl_certificate_key</span>    /www/server/panel/vhost/cert/web/privkey.pem;<br>    <span class="hljs-attribute">ssl_protocols</span> TLSv1.<span class="hljs-number">2</span> TLSv1.<span class="hljs-number">3</span>;<br>    <span class="hljs-attribute">ssl_ciphers</span> EECDH+CHACHA20:EECDH+CHACHA20-draft:EECDH+AES128:RSA+AES128:EECDH+AES256:RSA+AES256:EECDH+3DES:RSA+3DES:!MD5;<br>    <span class="hljs-attribute">ssl_prefer_server_ciphers</span> <span class="hljs-literal">on</span>;<br>    <span class="hljs-attribute">ssl_session_cache</span> shared:SSL:<span class="hljs-number">10m</span>;<br>    <span class="hljs-attribute">ssl_session_timeout</span> <span class="hljs-number">10m</span>;<br>    <span class="hljs-comment">#add_header Strict-Transport-Security &quot;max-age=31536000&quot;; # 上面加过这个请求头了</span><br>    <span class="hljs-attribute">error_page</span> <span class="hljs-number">497</span>  https://<span class="hljs-variable">$host</span><span class="hljs-variable">$request_uri</span>;<br><br>    <span class="hljs-comment">#禁止访问的文件或目录</span><br>    <span class="hljs-section">location</span> <span class="hljs-regexp">~ ^/(\.user.ini|\.htaccess|\.git|\.env|\.svn|\.project|LICENSE|README.md)</span><br>    &#123;<br>        <span class="hljs-attribute">return</span> <span class="hljs-number">404</span>;<br>    &#125;<br><br>    <span class="hljs-comment"># 配置反向代理</span><br>    <span class="hljs-section">location</span><span class="hljs-regexp"> ^~</span> /<br>    &#123;<br>        <span class="hljs-attribute">proxy_pass</span> http://127.0.0.1:5000;<br>        <span class="hljs-attribute">proxy_set_header</span> Host <span class="hljs-number">127.0.0.1</span>;<br>        <span class="hljs-attribute">proxy_set_header</span> X-Real-IP <span class="hljs-variable">$remote_addr</span>;<br>        <span class="hljs-attribute">proxy_set_header</span> X-Forwarded-For <span class="hljs-variable">$proxy_add_x_forwarded_for</span>;<br>        <span class="hljs-attribute">proxy_set_header</span> REMOTE-HOST <span class="hljs-variable">$remote_addr</span>;<br>        <span class="hljs-attribute">proxy_set_header</span> Upgrade <span class="hljs-variable">$http_upgrade</span>;<br>        <span class="hljs-attribute">proxy_set_header</span> Connection <span class="hljs-variable">$connection_upgrade</span>;<br>        <span class="hljs-attribute">proxy_http_version</span> <span class="hljs-number">1</span>.<span class="hljs-number">1</span>;<br>        <span class="hljs-comment"># proxy_hide_header Upgrade;</span><br>    <br>        <span class="hljs-attribute">add_header</span> X-Cache <span class="hljs-variable">$upstream_cache_status</span>;<br>    <br>        <span class="hljs-comment">#设置 Nginx 缓存</span><br>        <span class="hljs-attribute">set</span> <span class="hljs-variable">$static_fileG0ZQTXEv</span> <span class="hljs-number">0</span>;<br>        <span class="hljs-attribute">if</span> ( <span class="hljs-variable">$uri</span> <span class="hljs-regexp">~* &quot;\.(gif|png|jpg|css|js|woff|woff2)$&quot;</span> )<br>        &#123;<br>        	<span class="hljs-attribute">set</span> <span class="hljs-variable">$static_fileG0ZQTXEv</span> <span class="hljs-number">1</span>;<br>        	<span class="hljs-attribute">expires</span> <span class="hljs-number">1m</span>;<br>            &#125;<br>        <span class="hljs-attribute">if</span> ( <span class="hljs-variable">$static_fileG0ZQTXEv</span> = <span class="hljs-number">0</span> )<br>        &#123;<br>        <span class="hljs-attribute">add_header</span> Cache-Control <span class="hljs-literal">no</span>-cache;<br>        &#125;<br>    &#125;<br><br><br>	<span class="hljs-attribute">access_log</span>  /var/log/nginx/web.log;<br>    <span class="hljs-attribute">error_log</span>  /var/log/nginx/web.<span class="hljs-literal">error</span>.log;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h3 id="supervisor守护nginx"><a href="#supervisor守护nginx" class="headerlink" title="- supervisor守护nginx"></a>- supervisor守护nginx</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs bash">[program:nginx]<br><span class="hljs-built_in">command</span>=/usr/bin/nginx -g <span class="hljs-string">&#x27;daemon off;&#x27;</span><br>directory=/usr/bin/<br>autostart=<span class="hljs-literal">true</span><br>autorestart=<span class="hljs-literal">true</span><br>redirect_stderr=<span class="hljs-literal">true</span><br>priority=10<br>stdout_logfile=/var/log/supervisor/nginx.log<br>stderr_logfile=/var/log/supervisor/nginx.err.log<br></code></pre></td></tr></table></figure>
+
+
+
+<h2 id="MySQL"><a href="#MySQL" class="headerlink" title="MySQL"></a>MySQL</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># mysql 连接错误码1130(not allowed to connect to this MySQL server)解决</span><br><br>mysql -u root -p<br><br>GRANT ALL PRIVILEGES ON *.* TO `root`@`%` IDENTIFIED BY `password` WITH GRANT OPTION;<br>FLUSH PRIVILEGES;<br><br>或<br><br>use mysql;<br>update user <span class="hljs-built_in">set</span> Host=<span class="hljs-string">&#x27;%&#x27;</span> <span class="hljs-built_in">where</span> User=<span class="hljs-string">&#x27;root&#x27;</span>;<br>FLUSH PRIVILEGES;<br><br>SELECT user, host FROM mysql.user;<br></code></pre></td></tr></table></figure>
+
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E7%AC%94%E8%AE%B0/" class="category-chain-item">笔记</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E7%AC%94%E8%AE%B0/">#笔记</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>程序员笔记</div>
+      <div>https://devilxiaochao.github.io/2024/04/26/程序员笔记/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>小不点</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2024年4月26日</div>
+        </div>
+      
+      
+      <div class="license-meta-item">
+        <div>许可协议</div>
+        <div>
+          
+            
+            
+              <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+              <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                <i class="iconfont icon-by"></i>
+              </span>
+              </a>
+            
+          
+        </div>
+      </div>
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2024/05/02/Linux%E5%AE%89%E8%A3%85%E8%BF%87%E7%A8%8B%E4%B8%AD%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/" title="Linux安装过程中常见问题">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">Linux安装过程中常见问题</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2022/12/11/Windows10%E8%BD%AF%E4%BB%B6%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/" title="Windows软件配置清单">
+                        <span class="hidden-mobile">Windows软件配置清单</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://devilxiaochao.github.io" target="_blank" rel="nofollow noopener"><span>落魄山小不点</span></a> 
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      headingSelector : CONFIG.toc.headingSelector || 'h1,h2,h3,h4,h5,h6',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      collapseDepth   : CONFIG.toc.collapseDepth || 0,
+      scrollSmooth    : true,
+      headingsOffset  : -boardTop
+    });
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.10/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
